@@ -15,15 +15,20 @@ export class AppComponent {
   constructor() {}
 
   ngOnInit() {
-    this.chart = new Chart('canvas', {
+    this.chart = new Chart('test', {
       type: 'bar',
       data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        labels: ['Red', 'Blue', 'Yellow'],
         datasets: [
           {
             label: '# of Votes',
             data: [12, 19, 3, 5, 2, 3],
             borderWidth: 1,
+            backgroundColor: [
+              'rgb(255, 99, 132)',
+              'rgb(54, 162, 235)',
+              'rgb(255, 205, 86)',
+            ],
           },
         ],
       },
