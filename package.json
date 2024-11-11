@@ -1,5 +1,5 @@
 {
-  "name": "ng-chart",
+  "name": "chartjs-with-angular",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:ng-chart": "node dist/ng-chart/server/server.mjs"
+    "serve:ssr:chartjs-with-angular": "node dist/chartjs-with-angular/server/server.mjs"
   },
   "private": true,
   "dependencies": {

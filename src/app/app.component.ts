@@ -1,22 +1,21 @@
 import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
 import Chart from 'chart.js/auto';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [],
+  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css',
+  styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'ng-chart';
+  title = 'chartjs-with-angular';
   chart: any = [];
 
-  constructor() {}
-
   ngOnInit() {
-    this.chart = new Chart('test', {
-      type: 'bar',
+    this.chart = new Chart('doughnut', {
+      type: 'doughnut',
       data: {
         labels: ['Red', 'Blue', 'Yellow'],
         datasets: [
