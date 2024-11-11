@@ -1,0 +1,31 @@
+* {
+    font-family: "Courier New", Courier, monospace;
+  }
+  
+  .title {
+    text-align: center;
+  }
+  
+  .tabList {
+    padding: 0;
+    list-style: none;
+  }
+  
+  .tabList .nav-item {
+    border-right: 2px solid black;
+  }
+  
+  .tabList .nav-item:last-child {
+    border-right: none;
+  }
+  
+  .tabList .nav-link {
+    cursor: pointer;
+    color: #000;
+  }
+  
+  .tabList .nav-link:hover {
+    text-decoration: underline;
+    color: #0056b3; /* Cor ao passar o mouse */
+  }
+  
