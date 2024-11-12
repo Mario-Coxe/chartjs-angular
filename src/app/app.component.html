@@ -8,18 +8,6 @@
     <li class="nav-item" (click)="updateTab('bar')">
       <a class="nav-link">Bar Chart</a>
     </li>
-    <li class="nav-item" (click)="updateTab('line')">
-      <a class="nav-link">Line Chart</a>
-    </li>
-    <li class="nav-item" (click)="updateTab('lineAndBar')">
-      <a class="nav-link">Line and Bar Chart</a>
-    </li>
-    <li class="nav-item" (click)="updateTab('vc')">
-      <a class="nav-link">Vertical Stacked Bar Chart</a>
-    </li>
-    <li class="nav-item" (click)="updateTab('cc')">
-      <a class="nav-link">Vertical Stacked Bar with Line Chart</a>
-    </li>
   </ul>
 </div>
 
@@ -27,10 +15,7 @@
   <div *ngSwitchCase="'doughnut'">
     <app-doughnut-chart></app-doughnut-chart>
   </div>
-  <div *ngSwitchCase="'bar'"></div>
-  <div *ngSwitchCase="'line'"></div>
-  <div *ngSwitchCase="'lineAndBar'"></div>
-  <div *ngSwitchCase="'vc'"></div>
-  <div *ngSwitchCase="'cc'"></div>
+  <div *ngSwitchCase="'bar'">
+    <app-bar-chart></app-bar-chart>
+  </div>
 </div>
-
